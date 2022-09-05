@@ -1,0 +1,133 @@
+
+
+.bubble {
+  height: 50px;
+    width: 240px;
+    background: #fff;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+    margin-top: 0px;
+    font-size: 16px;
+    text-align: center;
+    padding: 13px 0px;
+    box-shadow: 0 1px 4px rgba(0,0,0,.3);
+    font-weight: 600;
+    z-index: 10;
+    color: #313e56;
+}
+div.bubble-box {
+  position: relative;
+    opacity: 0; 
+    text-align: center; 
+    animation: fadein 1s; 
+    animation-delay:3s; 
+    -webkit-animation-fill-mode: forwards; 
+    -moz-animation-fill-mode: forwards; 
+    -ms-animation-fill-mode: forwards; 
+    animation-fill-mode: forwards; 
+}
+
+@keyframes fadein {
+    from { opacity: 0; } /*Update because you asked for this numbers BUT i propose from 0 otherwise you are instantly seeing the div. */
+    to { opacity: 1;} 
+}
+.pointer {
+  
+  top:32px;
+    height: 15px;
+    width: 15px;
+    background: #fff;
+    margin: 0 auto;
+    transform: rotate(-45deg);
+    border-radius: 0 0 6px 0;
+    margin-top: -33px;
+    position: relative;
+    box-shadow:  1px 2px rgba(0,0,0,.3);
+    right: -119px;
+    
+  }
+
+
+
+.whatsapp {
+  right: 10px;
+  position: fixed;
+  bottom: 20px;
+  z-index: 111;
+}
+.whatsapp-bubble {
+  position: absolute;
+    top: -26px;
+    right: 55px;
+}
+#cerrar {
+  display: none;
+}
+label[for="cerrar"]{
+      position: absolute;
+        top: -57px;
+    left: -270px;
+    cursor: pointer;
+    z-index: 1;
+    width: 25px;
+    height: 25px;
+    background: #fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 25px;
+}
+
+#cerrar:checked  ~ .whatsapp-bubble,
+#cerrar:checked  ~ label {
+  display: none;
+}
+.badget {
+  border-radius: 50%;
+  background-color: #139A48;
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  line-height: 46px;
+  display: inline-block;
+}
+.badget i {
+  color: #fff;
+  font-size: 25px;
+}
+@media (min-width: 640px) {
+.badget {
+    border-radius: 50%;
+    background-color: #0F9848;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    line-height: 66px;
+    display: inline-block;
+  }
+  .badget i {
+    color: #fff;
+    font-size: 36px;
+  }
+ 
+ .whatsapp {
+    right: 20px;
+    position: fixed;
+    bottom: 20px;
+    z-index: 111;
+  }
+ .whatsapp-bubble {
+  position: absolute;
+    top: -30px;
+    right: 70px;
+}
+  /*.pointer {
+  
+  }
+  
+  label[for="cerrar"]{
+    
+}*/
+ 
+  
+}
